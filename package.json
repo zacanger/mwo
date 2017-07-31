@@ -9,11 +9,9 @@
   },
   "license": "WTFPL",
   "main": "index.js",
-  "preferGlobal": true,
-  "bin": "./index.js",
+  "bin": "./mwo.sh",
   "scripts": {
-    "start": "node index",
-    "test": ""
+    "test": "echo no"
   },
   "homepage": "https://github.com/zacanger/mwo#readme",
   "repository": {

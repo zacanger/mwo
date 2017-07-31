@@ -1,10 +1,12 @@
-# mwo
+# 뭐?
+
+This doesn't quite do anything yet.
 
 --------
 
-## Installation:
-
 ## Usage:
+
+`npx mwo` (or, `npm i -g mwo` if you're that kind of person).
 
 ## License:
 
