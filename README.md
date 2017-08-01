@@ -1,12 +1,22 @@
 # 뭐?
 
-This doesn't quite do anything yet.
+Is this thing a file, directory, executable, or what?
 
 --------
 
 ## Usage:
 
-`npx mwo` (or, `npm i -g mwo` if you're that kind of person).
+`npx mwo [foo]`
+
+You can install it globally, if you really want to, with `npm i -g mwo`.
+
+Currently it works for files (including directories) and things in `$PATH`.
+
+## Roadmap:
+
+* Aliases and functions
+* sh/ksh/zsh compat
+* Windows, maybe, eventually?
 
 ## License:
 
