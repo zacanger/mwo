@@ -1,26 +1,26 @@
 #!/usr/bin/env bash
 
-thing="$@"
+# #!/usr/bin/env bash --init-file
 
-# if [ -f "$HOME/.bashrc" ] ; then
-  # echo "yes"
-  # . "$HOME/.bashrc"
-  # shopt -s expand_aliases
-# fi
+thing="$@"
 
 echo '뭐?'
 
-if [ -d "$thing" ] || [ -f "$thing" ] ; then
-  file $thing
-elif [ -n "`which $thing`" ] ; then
-  which $thing
-fi
-# elif [ -n "`type $thing`" ] ; then
-  # type -t $thing
-# fi
+if [ -f "$HOME/.bashrc" ] ; then
+  # PS1='> '
+  # shopt -s expand_aliases
+  # . "$HOME/.bashrc"
+  # exec bash
 
-# order: type then which, or which then type?
-# file
-# type
-# which
-# apropos?
+  if [ -d "$thing" ] || [ -f "$thing" ] ; then
+    file $thing
+  elif [ -n "`which $thing`" ] ; then
+    which $thing
+  elif [ -n "`alias $thing`" ] ; then
+    alias $thing
+  elif [ -n "`type $thing`" ] ; then
+    type -t $thing
+  fi
+fi
+
+# apropos? man?
