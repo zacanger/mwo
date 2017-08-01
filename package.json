@@ -1,6 +1,6 @@
 {
   "name": "mwo",
-  "description": "mwo",
+  "description": "Advanced which.",
   "version": "0.0.2",
   "author": {
     "name": "Zac Anger",
@@ -20,8 +20,13 @@
   },
   "bugs": "https://github.com/zacanger/mwo/issues",
   "keywords": [
-    "",
-    "mwo"
+    "directory",
+    "file",
+    "mwo",
+    "path",
+    "type",
+    "what",
+    "which"
   ],
   "dependencies": {},
   "devDependencies": {},
