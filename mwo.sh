@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-# functions? man? apropos?
+thing="$@"
+
+echo -n '뭐? '
 
 # TODO: this is dumb:
-declare -a configs=(
+configs=(
   "$HOME/.bashrc"
   "$HOME/.bash_profile"
   "$HOME/.bash_aliases"
@@ -11,10 +13,7 @@ declare -a configs=(
   "$HOME/.zshrc"
 )
 
-thing="$@"
-
-echo -n '뭐? '
-
+# TODO: functions? man? apropos?
 if [ -d "$thing" ] || [ -f "$thing" ] ; then
   file $thing
 elif [ -n "`which $thing`" ] ; then
