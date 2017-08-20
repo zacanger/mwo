@@ -1,16 +1,19 @@
 #!/usr/bin/env bash
 
-# #!/usr/bin/env bash --init-file
+# apropos? man?
+
+# todo: this is dumb:
+declare -a configs=(
+  "$HOME/.bashrc"
+  "$HOME/.bash_profile"
+  "$HOME/.bash_aliases"
+  "$HOME/.aliases"
+  "$HOME/.zshrc"
+)
 
 thing="$@"
 
 echo -n '뭐? '
-
-# if [ -f "$HOME/.bashrc" ] ; then
-# PS1='> '
-# shopt -s expand_aliases
-# . "$HOME/.bashrc"
-# exec bash
 
 if [ -d "$thing" ] || [ -f "$thing" ] ; then
   file $thing
@@ -18,9 +21,11 @@ elif [ -n "`which $thing`" ] ; then
   which $thing
 elif [ -n "`type $thing`" ] ; then
   type -t $thing
-  # elif [ -n "`alias $thing`" ] ; then
-  # alias $thing
+else
+  for c in "${configs[@]}" ; do
+    if [ -f "$c" ] ; then
+      grep -q "alias $thing" "$c" && echo "$thing: alias"
+    fi
+  done
 fi
-# fi
 
-# apropos? man?
