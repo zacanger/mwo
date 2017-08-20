@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-# apropos? man?
+# functions? man? apropos?
 
-# todo: this is dumb:
+# TODO: this is dumb:
 declare -a configs=(
   "$HOME/.bashrc"
   "$HOME/.bash_profile"
@@ -28,4 +28,3 @@ else
     fi
   done
 fi
-
