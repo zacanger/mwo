@@ -4,7 +4,7 @@ thing="$@"
 
 echo -n '뭐? '
 
-# TODO: this is dumb:
+# TODO: this is dumb and bad:
 configs=(
   "$HOME/.bashrc"
   "$HOME/.bash_profile"
