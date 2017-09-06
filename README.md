@@ -14,9 +14,8 @@ Currently it works for files (including directories) and things in `$PATH`.
 
 ## Roadmap:
 
-* Aliases and functions
-* sh/ksh/zsh compat
-* Windows, maybe, eventually?
+* Aliases and functions (stuff that would normally come from `type`)
+* POSIX sh compat
 
 ## License:
 

@@ -4,7 +4,7 @@ thing="$@"
 
 echo -n '뭐? '
 
-# TODO: this is dumb and bad:
+# TODO: this is dumb and very bad:
 configs=(
   "$HOME/.bashrc"
   "$HOME/.bash_profile"
@@ -13,7 +13,6 @@ configs=(
   "$HOME/.zshrc"
 )
 
-# TODO: functions? man? apropos?
 if [ -d "$thing" ] || [ -f "$thing" ] ; then
   file $thing
 elif [ -n "`which $thing`" ] ; then
