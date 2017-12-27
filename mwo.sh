@@ -11,6 +11,7 @@ configs=(
   "$HOME/.bash_aliases"
   "$HOME/.aliases"
   "$HOME/.zshrc"
+  "$HOME/.zsh_aliases"
 )
 
 if [ -d "$thing" ] || [ -f "$thing" ] ; then
