@@ -10,12 +10,17 @@ Is this thing a file, directory, executable, or what?
 
 You can install it globally, if you really want to, with `npm i -g mwo`.
 
-Currently it works for files (including directories) and things in `$PATH`.
+Note: if you have GNU `which`, rather than use this script you should put this
+function in your `.bashrc` or similar:
 
-## Roadmap:
-
-* Aliases and functions (stuff that would normally come from `type`)
-* POSIX sh compat
+```bash
+mwo() {
+  thing=$@
+  echo "뭐 $thing? "
+  (alias; declare -f) | /usr/bin/env which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}
+export -f mwo
+```
 
 ## License:
 
