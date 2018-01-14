@@ -2,6 +2,12 @@
 
 thing="$@"
 
+if [ -z "$thing" ] || [ "$thing" == '-h' ] || [ "$thing" == '--help' ] ; then
+  echo 'Usage: mwo [word]'
+  echo 'Example: mwo mwo'
+  exit 0
+fi
+
 echo -n '뭐? '
 
 # TODO: this is dumb and very bad:
