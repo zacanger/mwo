@@ -24,4 +24,4 @@ export -f mwo
 
 ## License:
 
-[WTFPL](./LICENSE.md)
+[MIT](./LICENSE.md)
