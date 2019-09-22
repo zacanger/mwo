@@ -22,6 +22,4 @@ mwo() {
 export -f mwo
 ```
 
-## License:
-
-[MIT](./LICENSE.md)
+[LICENSE](./LICENSE.md)
