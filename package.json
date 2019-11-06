@@ -3,8 +3,8 @@
   "description": "Advanced which.",
   "version": "2.0.2",
   "author": {
-    "name": "Zac Anger",
     "email": "zac@zacanger.com",
+    "name": "Zac Anger",
     "url": "http://zacanger.com"
   },
   "license": "LGPL-3.0",
@@ -32,5 +32,9 @@
   "devDependencies": {},
   "engines": {
     "node": ">=4.1.2"
+  },
+  "funding": {
+    "type": "ko-fi",
+    "url": "https://ko-fi.com/zacanger"
   }
 }
