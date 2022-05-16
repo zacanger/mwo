@@ -21,11 +21,11 @@ configs=(
 )
 
 if [ -d "$thing" ] || [ -f "$thing" ] ; then
-  file $thing
-elif [ -n "`which $thing`" ] ; then
-  which $thing
-elif [ -n "`type $thing`" ] ; then
-  type -t $thing
+  file "$thing"
+elif [ -n "$(which "$thing")" ] ; then
+  which "$thing"
+elif [ -n "$(type "$thing")" ] ; then
+  type -t "$thing"
 else
   for c in "${configs[@]}" ; do
     if [ -f "$c" ] ; then
