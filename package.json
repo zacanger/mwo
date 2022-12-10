@@ -32,9 +32,5 @@
   "devDependencies": {},
   "engines": {
     "node": ">=4.1.2"
-  },
-  "funding": {
-    "type": "ko-fi",
-    "url": "https://ko-fi.com/zacanger"
   }
 }
