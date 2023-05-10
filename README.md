@@ -2,6 +2,8 @@
 
 Is this thing a file, directory, executable, or what?
 
+[Donate](https://ko-fi.com/zacanger)
+
 --------
 
 ## Usage:
